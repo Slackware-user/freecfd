@@ -42,7 +42,7 @@ int Grid::readCGNS() {
 	globalFaceCount=0;
 
 	// Open the grid file for reading
-	cg_open(fileName.c_str(),MODE_READ,&fileIndex);
+	cg_open(fileName.c_str(),CG_MODE_READ,&fileIndex);
 
 	// Read number of bases
 	cg_nbases(fileIndex,&nBases);

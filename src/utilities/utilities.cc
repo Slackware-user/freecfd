@@ -30,7 +30,7 @@ string int2str(int number) {
 
 bool fexists(const char *filename) {
 	ifstream tfile(filename);
-	return tfile;
+	return bool(tfile);
 }
 
 bool withinBox(Vec3D point,Vec3D corner_1,Vec3D corner_2) {
